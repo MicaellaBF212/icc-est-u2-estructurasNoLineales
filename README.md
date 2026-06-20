@@ -35,19 +35,19 @@
 ---
 **Descripción:** En la siguiente práctica se trabajó con una clase genérica BinaryTree<> extends Comparable<>, la cual permite almacenar cualquier objeto que implemente Comparable. Se creó la clase Persona con los atributos nombre y edad, haciendo uso de implements Comparable<> y sobrescribiendo el método compareTo para definir el criterio de orden. Luego, en BinaryTree, se implementó los mismos recorridos de la practica anterior.
 ## Implementacion del codigo 
-![alt text](image.png)
+![alt text](assets/image-8.png)
 ### PreOrden BinaryTree<>
-![alt text](image-1.png)
+![alt text](assets/image-9.png)
 ### PosOrden BinaryTree<>
-![alt text](image-2.png)
+![alt text](assets/image-10.png)
 ### InOrden BinaryTree<>
-![alt text](image-3.png)
+![alt text](assets/image-11.png)
 ### Height BinaryTree<>
-![alt text](image-4.png)
+![alt text](assets/image-12.png)
 ### Weight BinaryTree<>
-![alt text](image-5.png)
+![alt text](assets/image-13.png)
 ### App.java BinaryTree<>
-![alt text](image-6.png)
+![alt text](assets/image-14.png)
 
 ## Salida de consola
-![alt text](image-7.png)
+![alt text](assets/image-15.png)
