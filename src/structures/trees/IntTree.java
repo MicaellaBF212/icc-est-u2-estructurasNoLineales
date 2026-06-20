@@ -103,9 +103,9 @@ public class IntTree {
     private int getWeightRecursivo(Node<Integer> actual) {
         if(actual == null)
             return 0;
-        int heightLeft = getHeightRecursivo(actual.getLeft());
-        int heightRight = getHeightRecursivo(actual.getRight());
+        int weightLeft = getWeightRecursivo(actual.getLeft());
+        int weightRight = getWeightRecursivo(actual.getRight());
 
-        return heightLeft + heightRight + 1;
+        return weightLeft + weightRight + 1;
     }
 }

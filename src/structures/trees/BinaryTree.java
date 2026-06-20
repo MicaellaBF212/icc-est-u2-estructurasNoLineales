@@ -2,6 +2,7 @@ package structures.trees;
 
 import structures.node.Node;
 
+// CLASE ARBOL COMBINANDO STRING Y ENTEROS
 public class BinaryTree<T extends Comparable<T>> {
     private Node<T> root;
 
@@ -103,9 +104,9 @@ public class BinaryTree<T extends Comparable<T>> {
     private int getWeightRecursivo(Node<T> actual) {
         if(actual == null)
             return 0;
-        int heightLeft = getHeightRecursivo(actual.getLeft());
-        int heightRight = getHeightRecursivo(actual.getRight());
+        int weightLeft = getWeightRecursivo(actual.getLeft());
+        int weightRight = getWeightRecursivo(actual.getRight());
 
-        return heightLeft + heightRight + 1;
+        return weightLeft + weightRight + 1;
     }
 }

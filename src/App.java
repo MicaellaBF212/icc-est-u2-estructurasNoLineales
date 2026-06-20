@@ -1,4 +1,3 @@
-import java.util.function.BinaryOperator;
 
 import models.Persona;
 import structures.node.Node;
@@ -7,7 +6,7 @@ import structures.trees.IntTree;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        runIntTree();
+        //runIntTree();
         runBinaryTree();
     }
 
@@ -18,7 +17,21 @@ public class App {
         arbolPersonas.add(new Persona("Ana", 25));
         arbolPersonas.add(new Persona("Luis", 35));
         arbolPersonas.add(new Persona("Maria", 28));
-        
+
+        System.out.println("-----Preorden-----");
+        arbolPersonas.preOrden();
+        System.out.println();
+        System.out.println("-----PosOrden-----");
+        arbolPersonas.posOrden();
+        System.out.println();
+        System.out.println("-----InOrden-----");
+        arbolPersonas.inOrden();
+        System.out.println();
+        System.out.println("-----Height-----");
+        System.out.println(arbolPersonas.getHeight());
+        System.out.println();
+        System.out.println("-----Weight-----");
+        System.out.println(arbolPersonas.getWeight());
     }
 
     private static void runIntTree() {
@@ -38,6 +51,12 @@ public class App {
         System.out.println();
         System.out.println("-----InOrden-----");
         arbolNumeros.inOrden();
+        System.out.println();
+        System.out.println("-----Height-----");
+        System.out.println(arbolNumeros.getHeight());
+        System.out.println();
+        System.out.println("-----Weight-----");
+        System.out.println(arbolNumeros.getWeight());
 
         // Node<Integer> node1 = new Node(50);
         // Node<Integer> node2 = new Node(10);
