@@ -74,7 +74,7 @@ public class BinaryTree<T extends Comparable<T>> {
     }
 
     private void inOrdenRecursivo(Node<T> actual) {
-         if(actual == null){
+        if(actual == null){
             return;
         }
         inOrdenRecursivo(actual.getLeft());
