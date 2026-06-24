@@ -17,6 +17,7 @@ public class Ejercicio1 {
     }
 
     public void printTree(Node<Integer> root){
+        System.out.println();
         System.out.println("Imprimir Abol: ");
         printTreeRecursivo(root, 0);
     }
