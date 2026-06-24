@@ -7,6 +7,7 @@ public class Ejercicio2 {
         System.out.println("Arbol original: ");
         printTree(root);
         invertirRecursivo(root);
+        System.out.println();
         System.out.println("Arbol invertido: ");
         printTree(root);
         
@@ -20,9 +21,11 @@ public class Ejercicio2 {
         if(actual == null){
             return;
         }
-        System.out.print(actual);
-        invertirRecursivo(actual.getRight());
+        Node<Integer> aux = actual.getLeft();
+        actual.setLeft(actual.getRight());
+        actual.setRight(aux);
         invertirRecursivo(actual.getLeft());
+        invertirRecursivo(actual.getRight());
         
     }
 

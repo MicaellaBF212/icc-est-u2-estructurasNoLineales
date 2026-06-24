@@ -33,6 +33,7 @@
 ![alt text](assets/image-7.png)
 
 ---
+### Binarytree
 **Descripción:** En la siguiente práctica se trabajó con una clase genérica BinaryTree<> extends Comparable<>, la cual permite almacenar cualquier objeto que implemente Comparable. Se creó la clase Persona con los atributos nombre y edad, haciendo uso de implements Comparable<> y sobrescribiendo el método compareTo para definir el criterio de orden. Luego, en BinaryTree, se implementó los mismos recorridos de la practica anterior.
 ## Implementacion del codigo 
 ![alt text](assets/image-8.png)
